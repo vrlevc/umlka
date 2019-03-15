@@ -16,6 +16,7 @@
 		541C8FEC223A9E21002081D7 /* umlkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FEB223A9E21002081D7 /* umlkaTests.swift */; };
 		541C8FF7223A9E21002081D7 /* umlkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FF6223A9E21002081D7 /* umlkaUITests.swift */; };
 		541C9005223AA35C002081D7 /* swiftTour_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C9004223AA35C002081D7 /* swiftTour_Tests.swift */; };
+		541C9009223BE640002081D7 /* umlkaCoreData_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C9008223BE640002081D7 /* umlkaCoreData_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		541C8FF6223A9E21002081D7 /* umlkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umlkaUITests.swift; sourceTree = "<group>"; };
 		541C8FF8223A9E21002081D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		541C9004223AA35C002081D7 /* swiftTour_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftTour_Tests.swift; sourceTree = "<group>"; };
+		541C9008223BE640002081D7 /* umlkaCoreData_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umlkaCoreData_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				541C8FED223A9E21002081D7 /* Info.plist */,
 				541C9004223AA35C002081D7 /* swiftTour_Tests.swift */,
+				541C9008223BE640002081D7 /* umlkaCoreData_Tests.swift */,
 				541C8FEB223A9E21002081D7 /* umlkaTests.swift */,
 			);
 			path = umlkaTests;
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541C9009223BE640002081D7 /* umlkaCoreData_Tests.swift in Sources */,
 				541C8FEC223A9E21002081D7 /* umlkaTests.swift in Sources */,
 				541C9005223AA35C002081D7 /* swiftTour_Tests.swift in Sources */,
 			);

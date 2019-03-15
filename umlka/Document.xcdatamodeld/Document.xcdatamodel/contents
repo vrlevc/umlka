@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Class" representedClassName="Class" syncable="YES" codeGenerationType="class">
+        <attribute name="abstract" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="ClassName" preserveAfterDeletion="YES" syncable="YES"/>
+        <relationship name="model" maxCount="1" deletionRule="Nullify" destinationEntity="Model" inverseName="classes" inverseEntity="Model" syncable="YES"/>
+    </entity>
+    <entity name="Model" representedClassName="Model" syncable="YES" codeGenerationType="class">
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Class" inverseName="model" inverseEntity="Class" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Class" positionX="-13.72265625" positionY="-149.3828125" width="128" height="88"/>
+        <element name="Model" positionX="-258.6015625" positionY="-30.40234375" width="128" height="58"/>
+    </elements>
 </model>

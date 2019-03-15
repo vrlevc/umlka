@@ -34,6 +34,7 @@ class Document: NSPersistentDocument {
 		self.addWindowController(windowController)
 		
 		
+		
 		// Allowing the user interface elements to bind the document's data model via binding.
 		// Hence the user interface elements get their values through the representedObject.
 		// Set the view controller's represented object as your document.
