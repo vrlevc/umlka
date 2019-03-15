@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541C8FD4223A9E20002081D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD3223A9E20002081D7 /* AppDelegate.swift */; };
+		541C8FD6223A9E20002081D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD5223A9E20002081D7 /* ViewController.swift */; };
+		541C8FD8223A9E20002081D7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD7223A9E20002081D7 /* Document.swift */; };
+		541C8FDB223A9E20002081D7 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD9223A9E20002081D7 /* Document.xcdatamodeld */; };
+		541C8FDD223A9E21002081D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541C8FDC223A9E21002081D7 /* Assets.xcassets */; };
+		541C8FE0223A9E21002081D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C8FDE223A9E21002081D7 /* Main.storyboard */; };
+		541C8FEC223A9E21002081D7 /* umlkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FEB223A9E21002081D7 /* umlkaTests.swift */; };
+		541C8FF7223A9E21002081D7 /* umlkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FF6223A9E21002081D7 /* umlkaUITests.swift */; };
+		541C9005223AA35C002081D7 /* swiftTour_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C9004223AA35C002081D7 /* swiftTour_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		541C8FE8223A9E21002081D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541C8FC8223A9E20002081D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541C8FCF223A9E20002081D7;
+			remoteInfo = umlka;
+		};
+		541C8FF3223A9E21002081D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541C8FC8223A9E20002081D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541C8FCF223A9E20002081D7;
+			remoteInfo = umlka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		541C8FD0223A9E20002081D7 /* umlka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = umlka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541C8FD3223A9E20002081D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		541C8FD5223A9E20002081D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		541C8FD7223A9E20002081D7 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		541C8FDA223A9E20002081D7 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		541C8FDC223A9E21002081D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		541C8FDF223A9E21002081D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		541C8FE1223A9E21002081D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541C8FE2223A9E21002081D7 /* umlka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = umlka.entitlements; sourceTree = "<group>"; };
+		541C8FE7223A9E21002081D7 /* umlkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = umlkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		541C8FEB223A9E21002081D7 /* umlkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umlkaTests.swift; sourceTree = "<group>"; };
+		541C8FED223A9E21002081D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541C8FF2223A9E21002081D7 /* umlkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = umlkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		541C8FF6223A9E21002081D7 /* umlkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umlkaUITests.swift; sourceTree = "<group>"; };
+		541C8FF8223A9E21002081D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541C9004223AA35C002081D7 /* swiftTour_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftTour_Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541C8FCD223A9E20002081D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541C8FE4223A9E21002081D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541C8FEF223A9E21002081D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541C8FC7223A9E20002081D7 = {
+			isa = PBXGroup;
+			children = (
+				541C8FD2223A9E20002081D7 /* umlka */,
+				541C8FEA223A9E21002081D7 /* umlkaTests */,
+				541C8FF5223A9E21002081D7 /* umlkaUITests */,
+				541C8FD1223A9E20002081D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		541C8FD1223A9E20002081D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541C8FD0223A9E20002081D7 /* umlka.app */,
+				541C8FE7223A9E21002081D7 /* umlkaTests.xctest */,
+				541C8FF2223A9E21002081D7 /* umlkaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		541C8FD2223A9E20002081D7 /* umlka */ = {
+			isa = PBXGroup;
+			children = (
+				541C8FD3223A9E20002081D7 /* AppDelegate.swift */,
+				541C8FD5223A9E20002081D7 /* ViewController.swift */,
+				541C8FD7223A9E20002081D7 /* Document.swift */,
+				541C8FDC223A9E21002081D7 /* Assets.xcassets */,
+				541C8FDE223A9E21002081D7 /* Main.storyboard */,
+				541C8FE1223A9E21002081D7 /* Info.plist */,
+				541C8FE2223A9E21002081D7 /* umlka.entitlements */,
+				541C8FD9223A9E20002081D7 /* Document.xcdatamodeld */,
+			);
+			path = umlka;
+			sourceTree = "<group>";
+		};
+		541C8FEA223A9E21002081D7 /* umlkaTests */ = {
+			isa = PBXGroup;
+			children = (
+				541C8FED223A9E21002081D7 /* Info.plist */,
+				541C9004223AA35C002081D7 /* swiftTour_Tests.swift */,
+				541C8FEB223A9E21002081D7 /* umlkaTests.swift */,
+			);
+			path = umlkaTests;
+			sourceTree = "<group>";
+		};
+		541C8FF5223A9E21002081D7 /* umlkaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				541C8FF6223A9E21002081D7 /* umlkaUITests.swift */,
+				541C8FF8223A9E21002081D7 /* Info.plist */,
+			);
+			path = umlkaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		541C8FCF223A9E20002081D7 /* umlka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541C8FFB223A9E21002081D7 /* Build configuration list for PBXNativeTarget "umlka" */;
+			buildPhases = (
+				541C8FCC223A9E20002081D7 /* Sources */,
+				541C8FCD223A9E20002081D7 /* Frameworks */,
+				541C8FCE223A9E20002081D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = umlka;
+			productName = umlka;
+			productReference = 541C8FD0223A9E20002081D7 /* umlka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		541C8FE6223A9E21002081D7 /* umlkaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541C8FFE223A9E21002081D7 /* Build configuration list for PBXNativeTarget "umlkaTests" */;
+			buildPhases = (
+				541C8FE3223A9E21002081D7 /* Sources */,
+				541C8FE4223A9E21002081D7 /* Frameworks */,
+				541C8FE5223A9E21002081D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				541C8FE9223A9E21002081D7 /* PBXTargetDependency */,
+			);
+			name = umlkaTests;
+			productName = umlkaTests;
+			productReference = 541C8FE7223A9E21002081D7 /* umlkaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		541C8FF1223A9E21002081D7 /* umlkaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541C9001223A9E21002081D7 /* Build configuration list for PBXNativeTarget "umlkaUITests" */;
+			buildPhases = (
+				541C8FEE223A9E21002081D7 /* Sources */,
+				541C8FEF223A9E21002081D7 /* Frameworks */,
+				541C8FF0223A9E21002081D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				541C8FF4223A9E21002081D7 /* PBXTargetDependency */,
+			);
+			name = umlkaUITests;
+			productName = umlkaUITests;
+			productReference = 541C8FF2223A9E21002081D7 /* umlkaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541C8FC8223A9E20002081D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = LVA;
+				TargetAttributes = {
+					541C8FCF223A9E20002081D7 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					541C8FE6223A9E21002081D7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 541C8FCF223A9E20002081D7;
+					};
+					541C8FF1223A9E21002081D7 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 541C8FCF223A9E20002081D7;
+					};
+				};
+			};
+			buildConfigurationList = 541C8FCB223A9E20002081D7 /* Build configuration list for PBXProject "umlka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 541C8FC7223A9E20002081D7;
+			productRefGroup = 541C8FD1223A9E20002081D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541C8FCF223A9E20002081D7 /* umlka */,
+				541C8FE6223A9E21002081D7 /* umlkaTests */,
+				541C8FF1223A9E21002081D7 /* umlkaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		541C8FCE223A9E20002081D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541C8FDD223A9E21002081D7 /* Assets.xcassets in Resources */,
+				541C8FE0223A9E21002081D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541C8FE5223A9E21002081D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541C8FF0223A9E21002081D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541C8FCC223A9E20002081D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541C8FDB223A9E20002081D7 /* Document.xcdatamodeld in Sources */,
+				541C8FD6223A9E20002081D7 /* ViewController.swift in Sources */,
+				541C8FD4223A9E20002081D7 /* AppDelegate.swift in Sources */,
+				541C8FD8223A9E20002081D7 /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541C8FE3223A9E21002081D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541C8FEC223A9E21002081D7 /* umlkaTests.swift in Sources */,
+				541C9005223AA35C002081D7 /* swiftTour_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541C8FEE223A9E21002081D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541C8FF7223A9E21002081D7 /* umlkaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		541C8FE9223A9E21002081D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541C8FCF223A9E20002081D7 /* umlka */;
+			targetProxy = 541C8FE8223A9E21002081D7 /* PBXContainerItemProxy */;
+		};
+		541C8FF4223A9E21002081D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541C8FCF223A9E20002081D7 /* umlka */;
+			targetProxy = 541C8FF3223A9E21002081D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		541C8FDE223A9E21002081D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541C8FDF223A9E21002081D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		541C8FF9223A9E21002081D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		541C8FFA223A9E21002081D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		541C8FFC223A9E21002081D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = umlka/umlka.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = umlka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lva.com.umlka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		541C8FFD223A9E21002081D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = umlka/umlka.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = umlka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lva.com.umlka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		541C8FFF223A9E21002081D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = umlkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lva.com.umlkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/umlka.app/Contents/MacOS/umlka";
+			};
+			name = Debug;
+		};
+		541C9000223A9E21002081D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = umlkaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lva.com.umlkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/umlka.app/Contents/MacOS/umlka";
+			};
+			name = Release;
+		};
+		541C9002223A9E21002081D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = umlkaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lva.com.umlkaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = umlka;
+			};
+			name = Debug;
+		};
+		541C9003223A9E21002081D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8M8T7QQG92;
+				INFOPLIST_FILE = umlkaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lva.com.umlkaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = umlka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541C8FCB223A9E20002081D7 /* Build configuration list for PBXProject "umlka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541C8FF9223A9E21002081D7 /* Debug */,
+				541C8FFA223A9E21002081D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541C8FFB223A9E21002081D7 /* Build configuration list for PBXNativeTarget "umlka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541C8FFC223A9E21002081D7 /* Debug */,
+				541C8FFD223A9E21002081D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541C8FFE223A9E21002081D7 /* Build configuration list for PBXNativeTarget "umlkaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541C8FFF223A9E21002081D7 /* Debug */,
+				541C9000223A9E21002081D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541C9001223A9E21002081D7 /* Build configuration list for PBXNativeTarget "umlkaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541C9002223A9E21002081D7 /* Debug */,
+				541C9003223A9E21002081D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		541C8FD9223A9E20002081D7 /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				541C8FDA223A9E20002081D7 /* Document.xcdatamodel */,
+			);
+			currentVersion = 541C8FDA223A9E20002081D7 /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 541C8FC8223A9E20002081D7 /* Project object */;
+}
