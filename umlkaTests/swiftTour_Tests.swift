@@ -32,8 +32,19 @@ class swiftTour_Tests: XCTestCase {
 		print("   >>> let explicitDouble: Double = 70 : \(explicitDouble)")
 		print("   >>> let explicitFloat: Float = 4 : \(explicitFloat)")
 		
+		// convert -----------------------
+        let label = "The width is "
+        let width = 94
+        let widthLabel = label + String(width)
+        print("   >>> label + String(width) : \(widthLabel)")
 		
-		
+        // """ ---------------------------
+        let multiLineText = """
+            Line A .....
+            Line B .....
+        """
+        print("   >>> \(multiLineText)")
+        
 		//--------------------------------
     }
 	
