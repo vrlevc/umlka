@@ -169,4 +169,97 @@ class swiftTour_Tests: XCTestCase {
         
         //--------------------------------
     }
+	
+	func testSWIFT_Function() {
+		
+		// func --------------------------
+		func greet(person: String, day: String) -> String {
+			return "Hello \(person), today is \(day)."
+		}
+		print("   >>> greet : \(greet(person: "Bob", day: "Tuesday"))")
+		
+		func greets(_ person: String, on day: String) -> String {
+			return "Hello \(person), today is \(day)."
+		}
+		print("   >>> greets : \(greets("John", on: "Wednesday"))")
+		
+		// tuple -------------------------
+		func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
+			var min = scores[0]
+			var max = scores[0]
+			var sum = 0
+			
+			for score in scores {
+				if score > max {
+					max = score
+				} else if score < min {
+					min = score
+				}
+				sum += score
+			}
+			
+			return (min, max, sum)	// tuple
+		}
+		let statistics = calculateStatistics(scores: [5, 3, 100, 3, 9])
+		print("   >>> statistics.sum : \(statistics.sum)")  // by name
+		print("   >>> statistics.2 : \(statistics.2)")		// by number
+		
+		// nested ------------------------
+		func returnFifteen() -> Int {
+			var y = 10
+			func add() {	// nested
+				y += 5
+			}
+			add()
+			return y
+		}
+		XCTAssertEqual(15, returnFifteen())
+		
+		// return func -------------------
+		func makeIncrementer() -> ((Int) -> Int) {
+			func addOne(number: Int) -> Int {
+				return 1 + number
+			}
+			return addOne
+		}
+		let incrementer = makeIncrementer()
+		XCTAssertEqual(7+1, incrementer(7))
+		
+		// arg func ----------------------
+		func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+			for item in list {
+				if condition(item) {
+					return true
+				}
+			}
+			return false
+		}
+		func lessThenTen(number: Int) -> Bool {
+			return number < 10
+		}
+		let number = [20, 19, 7, 12]
+		XCTAssertTrue( hasAnyMatches(list: number, condition: lessThenTen) )
+		
+		//--------------------------------
+	}
+	
+	func testSWIFT_Closure() {
+		
+		// {} ----------------------------
+		let numbers = [20, 19, 7, 12]
+		print("   >>> numbers.mapped : \(numbers)")
+		let mapped = numbers.map({ (number: Int) -> Int in
+			let result = 3 * number
+			return result
+		})
+		print("   >>> numbers.mapped : \(mapped)")
+		
+		let mappedNumbers = numbers.map( { number in 3 * number } )
+		print("   >>> \(mappedNumbers)")
+		
+		let sortedNumbers = numbers.sorted { $0 > $1 }
+		print("   >>> \(sortedNumbers)")
+		
+		//--------------------------------
+	}
 }
