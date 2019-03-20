@@ -10,7 +10,7 @@ import XCTest
 
 class swiftTour_Tests: XCTestCase {
 
-    func testSWIFT() {
+    func testSWIFT_SimpleValues() {
 		
 		// constant ----------------------
 		let PI = 3.1415
@@ -70,4 +70,103 @@ class swiftTour_Tests: XCTestCase {
 		//--------------------------------
     }
 	
+    func testSWIFT_ControlFlow() {
+        
+        // if ----------------------------
+        let individualScores = [75, 43, 103, 87, 12]
+        var teamScore = 0
+        if individualScores.count > 1 && teamScore == 0 {
+            print("   >>> Team is not empty but new")
+        }
+        
+        // for ---------------------------
+        for score in individualScores {
+            if score > 50 {
+                teamScore += 3
+            } else {
+                teamScore += 1
+            }
+        }
+        print("   >>> Team score : \(teamScore)")
+        
+        // ? -----------------------------
+        let optionalString: String? = "Hello"
+        print("   >>> optionalSting is nil : \(optionalString == nil)")
+        
+        let optionalName: String? = "John Appleseed" // nil
+        var greeting = "Hello!"
+        if let name = optionalName {
+            greeting = "Hello \(name)"
+        } else {
+            greeting = "Hello stranger"
+        }
+        print("   <<< \(greeting)")
+        
+        // ?? ----------------------------
+        let nickName: String? = nil
+        let fullName: String = "John Appleseed"
+        let informalGreeting = "Hi \(nickName ?? fullName)"
+        print("   >>> Use default for optional value : \(informalGreeting)")
+        
+        // switch ------------------------
+        let vegetable = "red pepper"
+        switch vegetable {
+        case "celery":
+            print("Add some raisins and make ants on a log.")
+        case "cucumber", "watercress":
+            print("That would make a good tea sandwich.")
+        case let x where x.hasSuffix("pepper"):
+            print("Is it a spicy \(x)?")
+        default:
+            print("Everything tastes good in soup.")
+        }
+        
+        // for-in ------------------------
+        let interestingNumbers = [
+            "Prime": [2, 3, 5, 7, 11, 13],
+            "Fibonacci": [1, 1, 2, 3, 5, 8],
+            "Square": [1, 4, 9, 16, 25],
+            ]
+        var largest = 0
+        var largestKind:String? = nil
+        for (kind, numbers) in interestingNumbers {
+            for number in numbers {
+                if number > largest {
+                    largest = number
+                    largestKind = kind
+                }
+            }
+        }
+        print("   >>> Largest number of \(largestKind ?? "xxx") type is : \(largest)")
+        
+        // while -------------------------
+        var n = 2
+        while n < 100 {
+            n *= 2
+        }
+        print("   >>> while ... \(n)")
+        
+        // repeat-while ------------------
+        var m = 2
+        repeat {
+            m *= 2
+        } while m < 100
+        print("   >>> repeat-while ... \(n)")
+        
+        // ..< ---------------------------
+        var total = 0
+        for i in 0..<4 {
+            total += i
+        }
+        print("   >>> ommit upper bound : \(total)")
+        
+        // ... ---------------------------
+        var totalEx = 0
+        for i in 0...4 {
+            totalEx += i
+        }
+        print("   >>> full range : \(totalEx)")
+        
+        //--------------------------------
+    }
 }
