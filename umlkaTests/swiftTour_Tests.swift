@@ -8,6 +8,25 @@
 
 import XCTest
 
+// protocol ----------------------
+protocol ExampleProtocol {
+	var simpleDescription: String { get }
+	mutating func adjust()
+}
+
+// extension ---------------------
+extension Int: ExampleProtocol {
+	var simpleDescription: String {
+		return "The number \(self)"
+	}
+	mutating func adjust() {
+		self += 42
+	}
+}
+
+// MARK: -
+
+// TEST --------------------------
 class swiftTour_Tests: XCTestCase {
 
     func testSWIFT_SimpleValues() {
@@ -366,6 +385,142 @@ class swiftTour_Tests: XCTestCase {
 		optionalSquare = nil
 		sideLength = optionalSquare?.sideLength // if nill? - other just ignored = nil
 		XCTAssertNil(sideLength)
+		
+		//--------------------------------
+	}
+	
+	func testSWIFT_Enum_Struct() {
+		
+		// enum --------------------------
+		enum Rank: Int {
+			case ace = 1
+			case two, three, four, five, six, seven, eight, nine, ten
+			case jack, queen, king
+			
+			func simpleDescription() -> String {
+				switch self {
+				case .ace:
+					return "ace"
+				case .jack:
+					return "jack"
+				case .queen:
+					return "queen"
+				case .king:
+					return "king"
+				default:
+					return String(self.rawValue)
+				}
+			}
+		}
+		
+		let ace = Rank.ace
+		let aceRawValue = ace.rawValue
+		XCTAssertEqual(1, aceRawValue)
+		
+		// rawValue ----------------------
+		if let convertedRank = Rank(rawValue: 3) {
+			print("   >>> \(convertedRank.simpleDescription())")
+		}
+		
+		// -------------------------------
+		enum Suit {
+			case spades, hearts, diamonds, clubs
+			
+			func simpleDescription() -> String {
+				switch self {
+				case .spades:
+					return "spades"
+				case .hearts:
+					return "hearts"
+				case .diamonds:
+					return "diamonds"
+				case .clubs:
+					return "clubs"
+				}
+			}
+		}
+		
+		let hearts = Suit.hearts
+		let heartsDescription = hearts.simpleDescription()
+		print("   >>> \(heartsDescription)")
+		
+		// raw values --------------------
+		enum ServerResponse {
+			case result(String, String)
+			case failure(String)
+			
+			func description() -> String {
+				switch self {
+				case let .result(sunrise, sunset):		/// !!!!! extracted - matching the value against the switch cases
+					return "   >>> Sunrise is at \(sunrise) and sunset is at \(sunset)."
+				case let .failure(error):				/// !!!!! extracted - matching the value against the switch cases
+					return "   >>> Failure...  \(error)"
+				}
+			}
+		}
+		
+		let success = ServerResponse.result("6:00 am", "8:09 pm")
+		let failure = ServerResponse.failure("Out of cheese.")
+		
+		print("   >>> \(success.description())")
+		print("   >>> \(failure.description())")
+		
+		/// ----------------------------------------------------------------------------///
+		/// STRUCTURES are always COPIED when they are passed around in your code.		///
+		/// CLASSES are PASSED BY REFERENCE when they are passed around in your code.	///
+		/// ----------------------------------------------------------------------------///
+		
+		// struct ------------------------
+		struct Card {
+			var rank: Rank
+			var suit: Suit
+			func simpleDescription() -> String {
+				return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+			}
+		}
+		
+		let threeOfSpades = Card(rank: .three, suit: .spades)
+		let threeOfSpadesDescription = threeOfSpades.simpleDescription()
+		print("   >>> \(threeOfSpadesDescription)")
+		
+		//--------------------------------
+	}
+	
+	func testSWIFT_Protocol_Extention() {
+		
+		// class : protocol --------------
+		class SimpleClass: ExampleProtocol {
+			var simpleDescription: String = "A very simple class."
+			var anotherProperty: Int = 69105
+			func adjust() {		/// !!!!!!! methods on a class can always modify the class
+				simpleDescription += "  Now 100% adjusted."
+			}
+		}
+		
+		let a = SimpleClass()
+		a.adjust()
+		let aDescription = a.simpleDescription
+		print("   >>> \(aDescription)")
+		
+		// struct : protocol -------------
+		struct SimpleStructure: ExampleProtocol {
+			var simpleDescription: String = "A simple structure"
+			mutating func adjust() {		/// !!!!!!! mutating keyword - mark a method that modifies the structure
+				simpleDescription += " (adjusted)"
+			}
+		}
+		var b = SimpleStructure()
+		b.adjust()
+		let bDescription = b.simpleDescription
+		print("   >>> \(bDescription)")
+
+		// extension ---------------------
+		print("   >>> \(7.simpleDescription)")
+		
+		// protocol ----------------------
+		let protocolValue: ExampleProtocol = a
+		print("   >>> \(protocolValue.simpleDescription)")
+		// print(protocolValue.anotherProperty)  // Uncomment to see the error
 		
 		//--------------------------------
 	}
