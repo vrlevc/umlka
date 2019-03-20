@@ -10,7 +10,7 @@ import XCTest
 
 class swiftTour_Tests: XCTestCase {
 
-    func testExample() {
+    func testSWIFT() {
 		
 		// constant ----------------------
 		let PI = 3.1415
@@ -44,6 +44,28 @@ class swiftTour_Tests: XCTestCase {
             Line B .....
         """
         print("   >>> \(multiLineText)")
+        
+        // [] ----------------------------
+        var shoppingList = ["catfish", "water", "tulips"]
+        shoppingList[1] = "bottle of water"
+        shoppingList.append("blue paint")
+        print("   <<< LIST : \(shoppingList)")
+        
+        var occupations = [
+            "Malcolm": "Captain",
+            "Kaylee": "Mechanic",
+        ]
+        occupations["Jayne"] = "Public Relations"
+        print("   <<< LIST : \(occupations)")
+        
+        // empty -------------------------
+        let emptyArrray = [String]()
+        let emptyDictionalry = [String:Float]()
+        XCTAssertTrue(emptyArrray.isEmpty)
+        XCTAssertTrue(emptyDictionalry.isEmpty)
+        
+        shoppingList = [] // make its empty
+        occupations = [:] // make its empty
         
 		//--------------------------------
     }
