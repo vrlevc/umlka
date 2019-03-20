@@ -590,4 +590,51 @@ class swiftTour_Tests: XCTestCase {
 		
 		//--------------------------------
 	}
+	
+	func testSWIFT_Generics() {
+		
+		// <> ----------------------------
+		func makeArray<Item>(repeating item: Item, numberOfTimes: Int) -> [Item] {
+			var result = [Item]()
+			for _ in 0..<numberOfTimes {
+				result.append(item)
+			}
+			return result
+		}
+		
+		let array = makeArray(repeating: "knock", numberOfTimes: 4)
+		print("   >>> \(array)")
+		
+		// <> enum -----------------------
+		/// - Reimplement the Swift standard library's optional type -
+		enum OptionalValue<Wrapped> {
+			case none
+			case some(Wrapped)
+		}
+		var possibleInteger: OptionalValue<Int> = .none
+		print("   >>> \(possibleInteger)")
+		possibleInteger = .some(100)
+		print("   >>> \(possibleInteger)")
+		
+		// where -------------------------
+		func anyCommonElements<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U) -> Bool
+			where T.Element: Equatable, T.Element == U.Element
+		{
+			for lhsItem in lhs {
+				for rhsItem in rhs {
+					if lhsItem == rhsItem {
+						return true
+					}
+				}
+			}
+			return false
+		}
+		
+		let res = anyCommonElements([1, 2, 3], [3])
+		print("   >>> \(res)")
+		
+		/// Writing <T: Equatable> is the same as writing <T> ... where T: Equatable.
+		
+		//--------------------------------
+	}
 }
