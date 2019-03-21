@@ -10,27 +10,33 @@ import XCTest
 
 class umlkaCoreData_Tests: XCTestCase {
 
+	var persistaentContatiner: NSPersistentContainer?
+	
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+		persistaentContatiner = NSPersistentContainer(name: "Project")
+		XCTAssertNotNil(persistaentContatiner)
+		
+		persistaentContatiner?.loadPersistentStores { description, error in
+			if let error = error {
+				XCTAssertNil(error)
+				fatalError("Unable to load persistent stores: \(error)")
+			}
+		}
+		
+		XCTAssertNotNil(persistaentContatiner?.managedObjectModel)
+		XCTAssertNotNil(persistaentContatiner?.viewContext)
+		XCTAssertNotNil(persistaentContatiner?.persistentStoreCoordinator)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testInitializePersistentContainer() {
-
-		let persistaentContatiner = NSPersistentContainer(name: "Document")
-		XCTAssertNotNil(persistaentContatiner)
+    func testCreateClassObject() {
 		
-		persistaentContatiner.loadPersistentStores { description, error in
-			if let error = error {
-				fatalError("Unable to load persistent stores: \(error)")
-			}
-		}
-		XCTAssertNotNil(persistaentContatiner.managedObjectModel)
-		XCTAssertNotNil(persistaentContatiner.viewContext)
-		XCTAssertNotNil(persistaentContatiner.persistentStoreCoordinator)
+		let classObj = NSEntityDescription.insertNewObject(forEntityName: "Class", into: persistaentContatiner!.viewContext)
+		XCTAssertNotNil(classObj)
+		
     }
 
 }

@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		541C8FD4223A9E20002081D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD3223A9E20002081D7 /* AppDelegate.swift */; };
 		541C8FD6223A9E20002081D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD5223A9E20002081D7 /* ViewController.swift */; };
-		541C8FD8223A9E20002081D7 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD7223A9E20002081D7 /* Document.swift */; };
-		541C8FDB223A9E20002081D7 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD9223A9E20002081D7 /* Document.xcdatamodeld */; };
+		541C8FD8223A9E20002081D7 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD7223A9E20002081D7 /* Project.swift */; };
+		541C8FDB223A9E20002081D7 /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD9223A9E20002081D7 /* Project.xcdatamodeld */; };
 		541C8FDD223A9E21002081D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541C8FDC223A9E21002081D7 /* Assets.xcassets */; };
 		541C8FE0223A9E21002081D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C8FDE223A9E21002081D7 /* Main.storyboard */; };
 		541C8FEC223A9E21002081D7 /* umlkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FEB223A9E21002081D7 /* umlkaTests.swift */; };
@@ -40,7 +40,7 @@
 		541C8FD0223A9E20002081D7 /* umlka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = umlka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		541C8FD3223A9E20002081D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		541C8FD5223A9E20002081D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		541C8FD7223A9E20002081D7 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		541C8FD7223A9E20002081D7 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		541C8FDA223A9E20002081D7 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
 		541C8FDC223A9E21002081D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541C8FDF223A9E21002081D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,12 +106,12 @@
 			children = (
 				541C8FD3223A9E20002081D7 /* AppDelegate.swift */,
 				541C8FD5223A9E20002081D7 /* ViewController.swift */,
-				541C8FD7223A9E20002081D7 /* Document.swift */,
+				541C8FD7223A9E20002081D7 /* Project.swift */,
 				541C8FDC223A9E21002081D7 /* Assets.xcassets */,
 				541C8FDE223A9E21002081D7 /* Main.storyboard */,
 				541C8FE1223A9E21002081D7 /* Info.plist */,
 				541C8FE2223A9E21002081D7 /* umlka.entitlements */,
-				541C8FD9223A9E20002081D7 /* Document.xcdatamodeld */,
+				541C8FD9223A9E20002081D7 /* Project.xcdatamodeld */,
 			);
 			path = umlka;
 			sourceTree = "<group>";
@@ -271,10 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541C8FDB223A9E20002081D7 /* Document.xcdatamodeld in Sources */,
+				541C8FDB223A9E20002081D7 /* Project.xcdatamodeld in Sources */,
 				541C8FD6223A9E20002081D7 /* ViewController.swift in Sources */,
 				541C8FD4223A9E20002081D7 /* AppDelegate.swift in Sources */,
-				541C8FD8223A9E20002081D7 /* Document.swift in Sources */,
+				541C8FD8223A9E20002081D7 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,13 +604,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		541C8FD9223A9E20002081D7 /* Document.xcdatamodeld */ = {
+		541C8FD9223A9E20002081D7 /* Project.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				541C8FDA223A9E20002081D7 /* Document.xcdatamodel */,
 			);
 			currentVersion = 541C8FDA223A9E20002081D7 /* Document.xcdatamodel */;
-			path = Document.xcdatamodeld;
+			path = Project.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
