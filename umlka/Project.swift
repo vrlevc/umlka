@@ -8,9 +8,9 @@
 
 import Cocoa
 
-class Project: NSPersistentDocument {
+open class Project: NSPersistentDocument {
 
-	override init() {
+	public override init() {
 	    super.init()
 		// Add your subclass-specific initialization here.
 	}
@@ -18,14 +18,14 @@ class Project: NSPersistentDocument {
 	// MARK: - Enablers
 	
 	// This enables auto save.
-	override class var autosavesInPlace: Bool {
+	open override class var autosavesInPlace: Bool {
 		return true
 	}
 
 	// MARK: - User Interface
 	
 	/// - Tag: makeWindowControllersExample
-	override func makeWindowControllers() {
+	open override func makeWindowControllers() {
 		// Returns the Storyboard that contains your Document window.
 		let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
 		let windowController =
@@ -33,8 +33,7 @@ class Project: NSPersistentDocument {
 				withIdentifier: NSStoryboard.SceneIdentifier("Document Window Controller")) as! NSWindowController
 		self.addWindowController(windowController)
 		
-		
-		
+
 		// Allowing the user interface elements to bind the document's data model via binding.
 		// Hence the user interface elements get their values through the representedObject.
 		// Set the view controller's represented object as your document.

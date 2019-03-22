@@ -10,13 +10,12 @@
 		541C8FD4223A9E20002081D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD3223A9E20002081D7 /* AppDelegate.swift */; };
 		541C8FD6223A9E20002081D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD5223A9E20002081D7 /* ViewController.swift */; };
 		541C8FD8223A9E20002081D7 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD7223A9E20002081D7 /* Project.swift */; };
-		541C8FDB223A9E20002081D7 /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FD9223A9E20002081D7 /* Project.xcdatamodeld */; };
 		541C8FDD223A9E21002081D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541C8FDC223A9E21002081D7 /* Assets.xcassets */; };
 		541C8FE0223A9E21002081D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541C8FDE223A9E21002081D7 /* Main.storyboard */; };
-		541C8FEC223A9E21002081D7 /* umlkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FEB223A9E21002081D7 /* umlkaTests.swift */; };
 		541C8FF7223A9E21002081D7 /* umlkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8FF6223A9E21002081D7 /* umlkaUITests.swift */; };
 		541C9005223AA35C002081D7 /* swiftTour_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C9004223AA35C002081D7 /* swiftTour_Tests.swift */; };
 		541C9009223BE640002081D7 /* umlkaCoreData_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C9008223BE640002081D7 /* umlkaCoreData_Tests.swift */; };
+		54BCF6872244DEBA0084C96B /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54BCF6852244DEBA0084C96B /* Project.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,19 +40,18 @@
 		541C8FD3223A9E20002081D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		541C8FD5223A9E20002081D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		541C8FD7223A9E20002081D7 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		541C8FDA223A9E20002081D7 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
 		541C8FDC223A9E21002081D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		541C8FDF223A9E21002081D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		541C8FE1223A9E21002081D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		541C8FE2223A9E21002081D7 /* umlka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = umlka.entitlements; sourceTree = "<group>"; };
 		541C8FE7223A9E21002081D7 /* umlkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = umlkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		541C8FEB223A9E21002081D7 /* umlkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umlkaTests.swift; sourceTree = "<group>"; };
 		541C8FED223A9E21002081D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		541C8FF2223A9E21002081D7 /* umlkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = umlkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		541C8FF6223A9E21002081D7 /* umlkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umlkaUITests.swift; sourceTree = "<group>"; };
 		541C8FF8223A9E21002081D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		541C9004223AA35C002081D7 /* swiftTour_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftTour_Tests.swift; sourceTree = "<group>"; };
 		541C9008223BE640002081D7 /* umlkaCoreData_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = umlkaCoreData_Tests.swift; sourceTree = "<group>"; };
+		54BCF6862244DEBA0084C96B /* Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +108,8 @@
 				541C8FDC223A9E21002081D7 /* Assets.xcassets */,
 				541C8FDE223A9E21002081D7 /* Main.storyboard */,
 				541C8FE1223A9E21002081D7 /* Info.plist */,
+				54BCF6852244DEBA0084C96B /* Project.xcdatamodeld */,
 				541C8FE2223A9E21002081D7 /* umlka.entitlements */,
-				541C8FD9223A9E20002081D7 /* Project.xcdatamodeld */,
 			);
 			path = umlka;
 			sourceTree = "<group>";
@@ -122,7 +120,6 @@
 				541C8FED223A9E21002081D7 /* Info.plist */,
 				541C9004223AA35C002081D7 /* swiftTour_Tests.swift */,
 				541C9008223BE640002081D7 /* umlkaCoreData_Tests.swift */,
-				541C8FEB223A9E21002081D7 /* umlkaTests.swift */,
 			);
 			path = umlkaTests;
 			sourceTree = "<group>";
@@ -130,8 +127,8 @@
 		541C8FF5223A9E21002081D7 /* umlkaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				541C8FF6223A9E21002081D7 /* umlkaUITests.swift */,
 				541C8FF8223A9E21002081D7 /* Info.plist */,
+				541C8FF6223A9E21002081D7 /* umlkaUITests.swift */,
 			);
 			path = umlkaUITests;
 			sourceTree = "<group>";
@@ -271,10 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				541C8FDB223A9E20002081D7 /* Project.xcdatamodeld in Sources */,
 				541C8FD6223A9E20002081D7 /* ViewController.swift in Sources */,
 				541C8FD4223A9E20002081D7 /* AppDelegate.swift in Sources */,
 				541C8FD8223A9E20002081D7 /* Project.swift in Sources */,
+				54BCF6872244DEBA0084C96B /* Project.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				541C9009223BE640002081D7 /* umlkaCoreData_Tests.swift in Sources */,
-				541C8FEC223A9E21002081D7 /* umlkaTests.swift in Sources */,
 				541C9005223AA35C002081D7 /* swiftTour_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,12 +600,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		541C8FD9223A9E20002081D7 /* Project.xcdatamodeld */ = {
+		54BCF6852244DEBA0084C96B /* Project.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				541C8FDA223A9E20002081D7 /* Document.xcdatamodel */,
+				54BCF6862244DEBA0084C96B /* Project.xcdatamodel */,
 			);
-			currentVersion = 541C8FDA223A9E20002081D7 /* Document.xcdatamodel */;
+			currentVersion = 54BCF6862244DEBA0084C96B /* Project.xcdatamodel */;
 			path = Project.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
